@@ -1,0 +1,81 @@
+<!-- Contributed by Tim Huynh Le for MicroHealth, LLC., under the GN Affero General Public License 3.0-->
+<html>
+    <head>
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="metricopt">
+                <a class="active" href="javascript:void(0)" id="stdanc">Standard</a>
+                <a class="right" href="javascript:void(0)" id="metanc">Metric</a>
+            </div>
+            <div id="standardscr" class="content">
+                <div class="inputuser">
+                    <div class="control-group">
+                        <label>Height (feet)</label>
+                        <input type="text" name="heightft" id="heightft" value="" />
+                    </div>
+                    <div class="control-group">
+                        <label>Height (inches)</label>
+                        <input type="text" name="heightinch" id="heightinch" value="" />
+                    </div>
+                    <div class="control-group">
+                        <label>Weight (lbs)</label>
+                        <input type="text" name="weightlbs" id="weightlbs" value="" />
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="control-group">
+                        <label>Your BMI</label>
+                        <input type="text" name="bmistnd" id="bmistnd" value="" readonly="readonly" />
+                    </div>
+                    <div class="btncalc" id="btncalc">Calculate</div>
+                    <div class="progressbar" id="standardprog">
+                        &nbsp;
+                    </div>
+                    <div class="scaleinfo">
+                        <p>Underweight = < 18.5</p>
+                        <p>Normal weight = 18.5-24.9</p>
+                        <p>Overweight = 25-29.9</p>
+                        <p>Obesity = BMI of 30 or greater</p>
+                    </div>
+                </div>
+            </div>
+            <div id="metricscr" class="content" style="display: none;">
+                <div class="inputuser">
+                    <div class="control-group">
+                        <label>Height (cm)</label>
+                        <input type="text" name="heightft" id="heightcm" value="" />
+                    </div>
+                    <div class="control-group">
+                        <label>Weight (kg)</label>
+                        <input type="text" name="weightlbs" id="weightkg" value="" />
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="control-group">
+                        <label>Your BMI</label>
+                        <input type="text" name="bmimet" id="bmimet" value="" readonly="readonly" />
+                    </div>
+                    <div class="btncalc" id="btncalc1">Calculate</div>
+                    <div class="progressbar" id="metricprog">
+                        &nbsp;
+                    </div>
+                    <div class="scaleinfo">
+                        <p>Underweight = < 18.5</p>
+                        <p>Normal weight = 18.5-24.9</p>
+                        <p>Overweight = 25-29.9</p>
+                        <p>Obesity = BMI of 30 or greater</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p><a href="https://www.microhealthllc.com/about/terms-of-use/" target="_blank">Terms of Use</a></p>
+                <p><a href="https://www.microhealthllc.com/" target="_blank">Powered by MicroHealth</a></p>
+            </div>
+        </div>
+    </body>
+</html>
